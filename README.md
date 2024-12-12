@@ -175,7 +175,16 @@ No return just plots graph
 
 
 # Code Walkthrough
+First, we used Generate_test_data() to generate a sample signal. We set 
+f_start = 1
 
+f_stop = 600
+
+f_step = 10
+
+sample_rate = 50000 
+
+This means the sample signal would have frequencies from {1,11,21,...,591}.
 
 
 
