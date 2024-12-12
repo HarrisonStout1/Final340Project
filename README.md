@@ -164,7 +164,7 @@ x_max = maximum x-value in plot
 No return just plots graph
 
 # Code Walkthrough
-FOUND HERE
+Find walkthrough video here: https://drive.google.com/file/d/1qKWLIYSLVdMJR-9jmDQ0KacBw_WO7Q6q/view?usp=sharing
 
 
 # Sample Analysis
