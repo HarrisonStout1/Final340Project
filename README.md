@@ -188,7 +188,33 @@ This means the sample signal would have frequencies from {1,11,21,...,591}.
 
 ![Raw Signal](https://github.com/user-attachments/assets/df5e7725-cd01-4422-8076-21cc8771bea5)
 
-Above we can see the raw signal we generated. We then applied a high pass filter to our sample data with an order of 4 and a cutoff frequency of 90 Hz. We then plotted the Fast Fourier Transform (FFT) of our data after it had been passed through the high pass filter.
+Above, we can see the raw signal we generated. We then applied a high-pass filter to our sample data with an order of 4 and a cutoff frequency of 90 Hz. We plotted the Fast Fourier Transform (FFT) of our data after it had been passed through the high-pass filter.
+
+![High Pass](https://github.com/user-attachments/assets/8f699ad8-d260-4d32-ad91-8d46f2403759)
+
+We also used a low-pass filter and we can see it's independent effect on our signal.
+
+![low pass filer](https://github.com/user-attachments/assets/d9386600-c095-4a05-b897-7a38f6ac2258)
+
+Then we applied our high-pass filter and after applied the low-pass filter. This creates a band-pass filter. 
+
+![Bandpass](https://github.com/user-attachments/assets/e048ae85-99af-4cd7-bfbf-7efb12e897bf)
+
+The next part of the code reads a wav file as well as its sample rate. The sample rate for our audio signal was approximately 44000 Hz. For the first test (Test 1), we recorded Cooper speaking while Michael played a pure tone of 1000Hz. We plotted this versus time. 
+
+![Raw audio plot](https://github.com/user-attachments/assets/1eaa4429-8136-41a0-83df-ab839956d9ae)
+
+We then plotted the FFT of the Test 1 audio. 
+
+![Raw fft](https://github.com/user-attachments/assets/b6202628-e277-4ebb-859c-4b01ce5fce61)
+
+We see that the plot has a sharp spike at 1000 Hz, which is expected as the tone played was 1000Hz. Then we applied our band-pass filter and plotted the FFT of this filtered signal.
+
+![FFT of filtered data](https://github.com/user-attachments/assets/ac680734-6b87-4efc-a48f-02f16038d423)
+
+Here we can see that our filter succeeded in minimizing the 1000Hz tone.
+
+
 
 
 
