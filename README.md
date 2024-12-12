@@ -186,6 +186,11 @@ sample_rate = 50000
 
 This means the sample signal would have frequencies from {1,11,21,...,591}.
 
+![Raw Signal](https://github.com/user-attachments/assets/df5e7725-cd01-4422-8076-21cc8771bea5)
+
+Above we can see the raw signal we generated. We then applied a high pass filter to our sample data with an order of 4 and a cutoff frequency of 90 Hz. We then plotted the Fast Fourier Transform (FFT) of our data after it had been passed through the high pass filter.
+
+
 
 
 
