@@ -174,7 +174,7 @@ x_max = maximum x-value in plot
 No return just plots graph
 
 
-# Code Walkthrough
+# Sample Analysis
 First, we used Generate_test_data() to generate a sample signal. We set 
 f_start = 1
 
@@ -214,6 +214,14 @@ We see that the plot has a sharp spike at 1000 Hz, which is expected as the tone
 
 Here we can see that our filter succeeded in minimizing the 1000Hz tone.
 
+# Limitations
+One of the biggest limitations is that as we make our filter more restrictive (increase the order and decrease the pass band), our audio file becomes more muddled. Thus, we trade audio quality for noise reduction. Another limitation is that the notch filter only works at removing a specific frequency, thus for audio with frequency-varying noise, this method is ineffective. 
+
+# Future Results
+In the future, we would examine the effectiveness of using a finite, but large number of notch filters to remove a given range of frequencies. We would also experiment with other types of filters, as well as possibly diving into conditioning our signal by padding as well as normalizing our audio. 
+
+# TLDR
+For this project, we created a low pass filter, high pass filter, bandpass filter, and a notch filter to an audio file. This audio file was Cooper speaking with a 1000Hz tone playing in the background. We tested the different filters, modified the parameters and found that the notch filter performed the best. Thanks for a great semester.
 
 
 
