@@ -173,6 +173,9 @@ x_max = maximum x-value in plot
 ##### Returns: 
 No return just plots graph
 
+# Code Walkthrough
+FOUND HERE
+
 
 # Sample Analysis
 First, we used Generate_test_data() to generate a sample signal. We set 
